@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SOA groep 12 prototype</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -102,13 +102,71 @@
 
         <div>
             <!-- API's van jurgen -->
-        <h3>deepl get</h3>
+      
+        <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-black md:text-5xl lg:text-6xl">API's van jurgen</h2>
+        <br>
+        <h3 class="text-4xl font-extrabold text-black">deepl vertaling</h3>
+        <br>
         <form name="deeplForm">
-            enter deepl translation as sourcelang/targetlang/text : <input type="text" name="tekst">
-            <input type="submit" value="Submit">
+            <label for="sourcelanguage">Choose source language:</label>
+            <select name="sourcelanguage" id="sourcelanguage">
+                <option value="NL">Nederlands</option>
+                <option value="EN">Engels</option>
+                <option value="FR">Frans</option>
+                <option value="DE">Duits</option>
+            </select>
+            <br>
+            <label for="destinationlanguage">Choose destinationlanguage language:</label>
+            <select name="destinationlanguage" id="destinationlanguage">
+                <option value="EN">Engels</option>
+                <option value="NL">Nederlands</option>
+                <option value="FR">Frans</option>
+                <option value="DE">Duits</option>
+            </select>
+            <br>
+            <input type="text" name="tekst" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 flex max-w-screen-md" placeholder="Write your text here..."> 
+            <input type="submit" value="vertaal" class="w-full py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex max-w-screen-md">
         </form>
         <div id="deeplResult">
         </div>
+        <br>
+        <h3 class="text-4xl font-extrabold text-black">overzicht vertalingen</h3>
+        <form name="vertalingoverzicht">
+        <input type="submit" value="overzicht" class="w-full py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex max-w-screen-md">
+        </form>
+        <br>
+        <div id="vertalingoverzichtResult">
+        </div>
+        <br>
+        <h3 class="text-4xl font-extrabold text-black">maak vertaling</h3>
+        <form name="vertalingpost">
+        <input type="text" name="tekst" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 flex max-w-screen-md" placeholder="Write your text here..."> 
+        <input type="text" name="vertaling" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 flex max-w-screen-md" placeholder="Write your translation here..."> 
+        <input type="submit" value="maak vertaling" class="w-full py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex max-w-screen-md">
+        </form>
+        <br>
+        <div id="vertalingpostResult">
+        </div>
+        <br>
+        <h3 class="text-4xl font-extrabold text-black">update vertaling</h3>
+        <form name="vertalingput">
+        <input type="text" name="tekst" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 flex max-w-screen-md" placeholder="Write your text here..."> 
+        <input type="text" name="vertaling" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 flex max-w-screen-md" placeholder="Write your updated translation here..."> 
+        <input type="submit" value="update vertaling" class="w-full py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex max-w-screen-md">
+        </form> 
+        <br>
+        <div id="vertalingputResult">
+        </div>
+        <br>
+        <h3 class="text-4xl font-extrabold text-black">verwijder vertaling</h3>
+        <form name="vertalingdelete">
+        <input type="text" name="tekst" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 flex max-w-screen-md" placeholder="Enter translation you wish to delete..."> 
+        <input type="submit" value="verwijder vertaling" class="w-full py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex max-w-screen-md">
+        </form>
+        <br>
+        <div id="vertalingdeleteResult">
+        </div>
+        <br>
             
         </div> 
         <!-- Services van Bryan -->
