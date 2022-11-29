@@ -4,10 +4,267 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <main>
-        Hello world
+        <!-- Rick's services -->
+        <div class="w-full flex flex-col p-5 m-5">
+            <div class="w-4/5"> 
+        <h3 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-black">
+            Meat generator</h3>
+        <form name="meatForm">
+        <button type="submit" value="Submit" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+            Generate Meat</button>
+        </form>
+        <div id="meatResult" class="text-1xl text-black font-thin ">
+            
+        </div> 
+        </div>
+        </div>
+        
+
+        <div class="w-full flex flex-col p-5 m-5">
+            <div class="w-4/5">
+        <h3 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-black">
+            Html objects list</h3>
+        <form name="htmlFormGet">
+            <button type="submit" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                Generate</button>
+        </form>
+        <div id="htmlResult" class="text-2xl text-black font-thin ">
+            
+        </div> 
+        </div>
+        </div>
+
+
+        <div class="w-full flex flex-col p-5 m-5">
+            <div class="w-4/5">
+        <h3 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-black">
+            Add html object to list</h3>
+        <form name="htmlFormPost">
+            <label class="text-2xl font-extrabold text-black">Name: </label><input type="text" name="name" class="block p-2.5 w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <label class="text-2xl font-extrabold text-black">Description: </label> <input type="text" name="description" class="block p-2.5 w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <label class="text-2xl font-extrabold text-black">Id: </label><input type="text" name="id" class="block p-2.5 w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <input type="submit" value="Submit" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+        </form>
+        </div>
+        </div>
+
+
+        <div class="w-full flex flex-col p-5 m-5">
+            <div class="w-4/5">
+        <h3 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-black">Update html object on the list</h3>
+        <form name="htmlFormPut">
+            <label class="text-2xl font-extrabold text-black">Name: </label><input type="text" name="name" class="block p-2.5 w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <label class="text-2xl font-extrabold text-black">Description: </label> <input type="text" name="description" class="block p-2.5 w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <label class="text-2xl font-extrabold text-black">Id: </label><input type="text" name="id" class="block p-2.5 w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <input type="submit" value="Submit" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+        </form>
+        </div>
+        </div>
+
+
+        <div class="w-full flex flex-col p-5 m-5">
+            <div class="w-4/5">
+        <h3 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-black">Delete html object on the list</h3>
+        <form name="htmlFormDelete">
+            <label class="text-2xl font-extrabold text-black">Id: </label><input type="text" name="id" class="block p-2.5 w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <input type="submit" value="Submit" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+        </form>
+        </div>
+        </div>
+
+        <!-- Fergal's services -->
+        <h3 class="mb-4 m-5 text-3xl font-extrabold tracking-tight leading-none text-black">Fonts DB</h3>
+        <form name="fontsdbForm" class="m-5">
+            <button id="fontsdbRefresh" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Refresh</button><br>
+            <select id="fontsdbSelector" size="5">
+                <option id="fontsdbNew" selected>New...</option>
+            </select><br>
+            Name: <input type="text" name="name" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><br>
+            URL: <input type="text" name="url" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><br>
+            <button id="fontsdbCreateBtn" class="w-96 py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Create</button>
+            <button id="fontsdbDeleteBtn" hidden>Delete</button>
+        </form>
+        <h3 class="mb-4 m-5 text-3xl font-extrabold tracking-tight leading-none text-black">PDFShift</h3>
+        <form name="pdfshiftForm" class="m-5">
+            URL of webpage to convert to PDF: <input type="text" name="url" class="bg-gray-50 border w-96 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"><br>
+            Landscape: <input type="checkbox" name="landscape" ><br>
+            Use print: <input type="checkbox" name="use_print"><br>
+            <input type="submit" value="Submit" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
+            <h4>Pending conversions</h4>
+            <ul id="pdfshiftPending">
+            </ul>
+        </form>
+        
+
+        <div>
+            <!-- API's van jurgen -->
+        <h3>deepl get</h3>
+        <form name="deeplForm">
+            enter deepl translation as sourcelang/targetlang/text : <input type="text" name="tekst">
+            <input type="submit" value="Submit">
+        </form>
+        <div id="deeplResult">
+        </div>
+            
+        </div> 
+        <!-- Services van Bryan -->
+        <div class="w-full flex flex-col p-5 m-5">
+            <div class="w-96"> 
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-black md:text-5xl lg:text-6xl">Rewriter</h1>
+                <form name="rewriterForm" >
+                    <label for="message" class="block mb-2 text-sm font-medium text-black">Your message</label>
+                    <textarea name="tekst" id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your text here..."></textarea>
+                    <button type="submit" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Rewrite</button>
+                </form>
+                <h2 class="text-4xl font-extrabold text-black">Result:</h2>
+                <p class="text-4xl text-black font-thin " id="rewriter_result"></p>
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col m-5 p-5">
+            <div> 
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-black md:text-5xl lg:text-6xl">Stock Images</h1>
+                <button id="allStockImagesButton" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Get all images</button>
+                <div id="imagesAll_result" class="flex max-w-screen-md overflow-scroll mt-5"> 
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col m-5 p-5">
+            <div class="w-96"> 
+                <h1 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-black">Get an image</h1>
+                <div id="alert_image_undefined" class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 hidden" role="alert">
+                    <span class="font-medium">Image doesn't exist!</span> 
+                </div>
+                <div>
+                    <form name="getStockImageForm" >
+                        <label for="id_image" class="block mb-2 text-sm font-medium text-black">Id</label>
+                        <input name="id" type="number" id="id_image" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        <button type="submit" id="allStockImagesButton" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Get image</button>
+                    </form>
+                </div>
+                <div id="alert_image_delete" class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800 hidden" role="alert">
+                    <span class="font-medium">The image has been deleted!</span> 
+                </div>
+
+                <div id="alert_image_update" class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800 hidden" role="alert">
+                    <span class="font-medium">The image has been updated!</span> 
+                </div>
+                
+                <div id="get_image_result" > 
+                    
+                </div>
+                <form name="updateStockImageForm" class="w-full hidden">
+                    <input name="id" value="${result.data.id}" type="hidden"/>
+                    <div>
+                        <label for="title_image" class="block mb-2 text-sm font-medium text-black">Title</label>
+                        <input value="${result.data.title}" name="title" type="text" id="title_image" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                    </div>
+                    <div>
+                        <label for="last_name" class="block mb-2 text-sm font-medium text-black">Url</label>
+                        <input value="${result.data.url}" name="url" type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                    </div>
+                    <button type="submit" class="w-full py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Update</button>
+                </form>
+                <div id="delete_image">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col p-5 m-5">
+            <div class="w-96"> 
+                <h1 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-black">Upload a new stock image</h1>
+                <div id="alert_image_post" class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800 hidden" role="alert">
+                    <span class="font-medium">Your image has been uploaded!</span> 
+                </div>
+                <form name="uploadStockImageForm">
+                    <div>
+                        <label for="title_image" class="block mb-2 text-sm font-medium text-black">Title</label>
+                        <input name="title" type="text" id="title_image" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                    </div>
+                    <div>
+                        <label for="last_name" class="block mb-2 text-sm font-medium text-black">Url</label>
+                        <input name="url" type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                    </div>
+                    <button type="submit" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Upload</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Services van Gregory -->
+        <div class="w-full flex flex-col p-5 m-5">
+            <div class="w-96"> 
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-black">Google Fonts API</h2>
+                <div>
+                    <label for="fonts_api" class="block mb-2 text-sm font-medium text-black">Geeft de naam van het font dat je wilt.</label>
+                    <input name="fonts_api" type="text" id="fonts_api" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                    <button id="fonts_api_button" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Get info</button>
+                </div>
+                <div id="fonts_api_result"></div>
+            </div>
+            <div class="w-96">
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-black">Color API</h2>
+                <h3>Get all</h3>
+                <div>
+                    <button id="color_api_all_button" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Get all colors</button>
+                </div>
+                <div id="color_api_result"></div>
+                <h3>Add a color</h3>
+                <form id="color_api_form" >
+                    <label for="naam" class="block mb-2 text-sm font-medium text-black">De info voor de kleur die je wilt toevoegen.</label>
+                    <input name="naam" type="text" placeholder="naam" id="naam" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                    <input name="hex" type="text" placeholder="hex waarde" id="hex" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                    <input name="rgb" type="text" placeholder="rgb waarde " id="rgb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                    <button type="button" id="color_api_add_button" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Add Color</button>
+                </form>
+                <div id="color_api_result_add"></div>
+            </div>
+        </div>
+
+
+        <!-- Services van Arne -->
+        <div class="w-full flex flex-col p-5 m-5">
+            <div class="w-96"> 
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-black md:text-5xl lg:text-6xl">Insult api</h1>
+                <label for="message" class="block mb-2 text-sm font-medium text-black">Who do you want to insult?</label>
+                <input id="insultName" placeholder="name" type="text" name="name" id="first-name" autocomplete="given-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <button id="insultBtn" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Insult</button>
+                <h2 class="text-4xl font-extrabold text-black">Result:</h2>
+                <p class="text-4xl text-black font-thin " id="insultOutput"></p>
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col p-5 m-5">
+            <div class="w-96"> 
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-black md:text-5xl lg:text-6xl">CSS button api</h1>
+                <label for="textColor" class="block mb-2 text-sm font-medium text-black">Text color</label>
+                <input id="textColor" value="#000" placeholder="text color" type="text" name="name" autocomplete="given-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="backgroundColor" class="block mb-2 text-sm font-medium text-black">Background color</label>
+                <input id="backgroundColor" value="#FFF" placeholder="background color" type="text" name="name" autocomplete="given-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="borderRadius" class="block mb-2 text-sm font-medium text-black">Border radius</label>
+                <input id="borderRadius" value="5" placeholder="border radius" type="number" name="name" autocomplete="given-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <button id="cssButtonBtn" class="py-2.5 mt-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Save</button>
+                <p style="color: red; font-weight:900">Fill in date then press edit to change the data of an existing button</p>
+                <h2 class="text-4xl font-extrabold text-black">Result:</h2>
+                <p class="text-4xl text-black font-thin " id="cssButtonOutput"></p>
+            </div>
+        </div>
+
     </main>
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+<script type="text/javascript" src="fergal.js"></script>
+<script type="text/javascript" src="jurgen.js"></script>
+<script type="text/javascript" src="rick.js"></script>
+<script type="text/javascript" src="gregory.js"></script>
+<script type="text/javascript" src="arne.js"></script>
+<script type="text/javascript" src="bryan.js"></script>
+
 </html>
